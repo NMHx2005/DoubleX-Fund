@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Favorit', sans-serif;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('fonts/Favorit.woff2') format('woff2'),
+    url('fonts/Favorit.woff') format('woff'),
+    url('fonts/Favorit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Header */
+.Header {
+    height: 128px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: white;
+}
+
+/* Header content */
+.Header__content {
+    padding: 0 80px;
+    width: 100%;
+}
+.Header__header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.logo img {
+    width: 96px;
+    height: auto;
+}
+
+/* Navigation */
+.nav {
+    max-width: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-link {
+    font-size: 1.4em;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom-link:hover,
+.custom-link:focus {
+    text-decoration: underline;
+}
+
+/* Custom Button */
+.custom-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 6px 8px;
+    background-color: white;
+    border: 1px solid #c7bcbc;
+    font-family: "Inconsolata", serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.custom-button:hover {
+    box-shadow: 0 0 20px 0 #BCB901;
+    border-color: transparent;
+}
+
+/* Menu button (Mobile) */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn svg {
+    width: 30px;
+    height: 30px;
+}
+/* Mobile Menu */
+.menu-btn-close {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.mobile-menu {
+    display: none;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .mobile-menu .nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .nav {
+        max-width: 100%;
+    }
+
+    .mobile-menu .nav .custom-link {
+        margin-bottom: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        width: 100%;
+    }
+    .mobile-menu .custom-button {
+        display: flex;
+        width: calc(100% - 64px);
+        padding: 10px 16px;
+        font-size: 16px;
+        margin: 0 32px;
+        height: auto;
+    }
+    .mobile-menu {
+        padding: 64px 0;
+        border-top: 2px solid #000000;
+        height: calc(100vh - 96px);
+        flex-direction: column; /* Sắp xếp dọc */
+        justify-content: space-between; /* Đẩy nội dung đầu lên trên, nội dung cuối xuống dưới */
+        flex-wrap: nowrap;
+        background-color: white; /* Màu nền trắng */
+        position: relative; /* Hoặc absolute, tùy thuộc vào ngữ cảnh */
+        z-index: 10; /* Đảm bảo phần tử này nổi lên trên các phần tử khác */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng để nổi bật hơn */
+    }
+    .Header__header {
+        height: 96px;
+        padding: 0 12px;
+    }
+    .Header {
+        height: 96px;
+        align-items: start;
+    }
+    .Header__content {
+        padding: 0;
+        height: 100%;
+    }
+    .custom-button {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .menu-btn{
+        padding: 16px;
+        display: block;
+    }
+    .menu-btn-close {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-btn svg {
+        opacity: 0.5;
+    }
+    .logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .custom-link {
+        font-size: 1.4em;
+    }
+}
+
+/* End Header */
+
+
+
+
+/*Section 1*/
+.section1 {
+    height: calc(100vh - 128px);
+    margin-bottom: 80px;
+}
+.section1__content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section1__content .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section1__content .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.section1__content .main-text {
+    text-align: center; /* text-center */
+    margin-bottom: 2.5rem; /* mb-10 (10 * 0.25rem = 2.5rem) */
+    font-family: 'Favorit', sans-serif; /* font-['Favorit'] */
+    font-weight: 400; /* font-normal */
+    font-size: 64px; /* text-[40px] */
+    line-height: 80px; /* leading-[48px] */
+}
+.section1__content .highlight {
+    color: #d4ff00;
+    text-decoration: underline;
+}
+.section1__content .sub-text {
+    text-align: center;
+}
+.container__content {
+    color: white; /* text-white */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    width: 100%; /* w-full */
+    height: 100%; /* h-full */
+    max-width: 1000px; /* max-w-[1000px] */
+    margin: 0 auto; /* mx-auto */
+    padding-left: 16px; /* px-4 (4 * 4px = 16px) */
+    padding-right: 16px;
+    z-index: 2;
+}
+u {
+    color: #f3f9a2;
+}
+
+@media (max-width: 1024px) { /* lg: */
+    .section1__content .main-text {
+        font-size: 40px; /* lg:text-[64px] */
+        line-height: 48px;
+    }
+    .section1 {
+        height: calc(100vh - 96px);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+}
+/*End Section 1*/
+
+
+
+
+/* Section 2*/
+.section2__content {
+    padding: 8px;
+    margin-bottom: 2.5rem;
+}
+.section2__content .container {
+    margin: 0 auto;
+    padding: 0 80px;
+    width: 100%;
+}
+.section2__content .header {
+    text-align: center;
+    margin-bottom: 2rem; /* mb-8 (8 * 0.25rem = 2rem) */
+}
+.section2__content .header h1 {
+    text-align: center; /* text-center */
+    font-weight: 400; /* font-normal */
+    font-size: 40px; /* text-[24px] */
+    line-height: 32px; /* leading-[32px] */
+    width: 100%; /* w-full */
+}
+.section2__content .header h1 u {
+    color: black;
+}
+.section2__content .header h1 span {
+    font-weight: 700;
+}
+.section2__content .cards {
+    display: flex; /* flex */
+    flex-wrap: wrap; /* flex-wrap */
+    gap: 1rem; /* gap-4 (4 * 0.25rem = 1rem) */
+    margin-bottom: 2.5rem; /* mb-10 (10 * 0.25rem = 2.5rem) */
+    justify-content: center; /* justify-center */
+    padding-left: 0.5rem; /* px-2 (2 * 0.25rem = 0.5rem) */
+    padding-right: 0.5rem; /* px-2 (2 * 0.25rem = 0.5rem) */
+}
+.section2__content .card {
+    border: 1px solid black; /* border border-black */
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden; /* overflow-hidden */
+    max-width: 400px; /* max-w-[400px] */
+    min-width: 360px; /* min-w-[360px] */
+    cursor: pointer;
+}
+.section2__content .card img {
+    width: 100%; /* w-full */
+    height: 12rem; /* h-48 (48 * 0.25rem = 12rem) */
+    object-fit: cover; /* object-cover */
+}
+.section2__content .card-content {
+    padding: 16px;
+}
+.section2__content .card-content h2 {
+    font-size: 1.25rem; /* text-xl (1.25rem tương đương với 20px) */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 0.5rem; /* mb-2 (2 * 0.25rem = 0.5rem) */
+}
+.section2__content .card-content p {
+    margin: 0 0 16px 0;
+}
+.section2__content .card-content .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #000;
+}
+@media (max-width: 1024px) {
+    .section2__content .header h1 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .section2__content .card {
+        max-width: 100%;
+    }
+    .section2__content .header h1 {
+        font-size: 24px;
+    }
+}
+/* End Section 2*/
+
+
+/* Section 3 */
+
+/* Bọc tất cả nội dung */
+.section-3 {
+    position: relative;
+    background-color: #f8f8f8; /* Thay đổi theo màu thương hiệu thực tế */
+    padding: 24px 80px;
+}
+
+/* Header */
+.section-3 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    padding: 1rem 0; /* py-4 (16px trên và dưới) */
+}
+
+/* Hiệu ứng marquee */
+.marquee-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+    margin: 0 1rem; /* mx-4 */
+    color: #A3FFAC; /* text-brand-green-2 */
+    font-weight: 500; /* medium */
+}
+/* Marquee chính */
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    width: 200%; /* Gấp đôi để chạy mượt */
+}
+
+@media (min-width: 1024px) { /* lg */
+    .marquee-content {
+        animation: marquee 10s linear infinite;
+    }
+}
+
+@keyframes marquee-mobile {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Nội dung chính */
+.section-3 main {
+    padding-top: 64px;
+    margin-top: 2.5rem; /* mt-10 (40px) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; /* gap-4 (16px) */
+    border-bottom: 1px solid #d1d1d1; /* border-b với màu brand-grey-2 */
+    padding-bottom: 1.5rem; /* pb-6 (24px) */
+    flex-wrap: wrap;
+}
+
+.section-3 h1 {
+    font-size: 24px;
+}
+
+/* Navigation */
+.section-3 nav {
+    margin-top: 10px;
+}
+
+.section-3 nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+/* Social Icons */
+.section-3 .social-icons {
+    margin: 15px 0;
+}
+
+.section-3 .icon {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Footer */
+.section-3 footer {
+    font-size: 14px;
+    color: black;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.section-3 .disclosure {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+    width: 100%;
+}
+
+/* ✅ RESPONSIVE CHO MÀN HÌNH NHỎ */
+@media (max-width: 1024px) {
+    .section-3 main {
+        padding: 64px 0 24px 0;
+        margin: 0;
+    }
+    .section-3 nav {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .section-3 main {
+        padding: 64px 0 24px 0;
+        display: block;
+        text-align: center;
+    }
+    .section-3 .header-content {
+        animation: marquee 7s linear infinite;
+    }
+    .section-3 {
+        padding-left: 1.5rem; /* 24px */
+        padding-right: 1.5rem; /* 24px */
+    }
+
+    .section-3 h1 {
+        font-size: 20px;
+    }
+    .section-3 nav {
+        justify-content: center;
+        margin-top: 32px;
+    }
+    .section-3 .social-icons {
+        margin-top: 32px;
+    }
+    .section-3 footer {
+        text-align: center;
+    }
+    .section-3 nav a {
+        font-size: 14px;
+        display: block;
+        margin-left: 16px;
+    }
+
+    .section-3 .icon {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-3 .header-content {
+        animation: marquee 5s linear infinite;
+    }
+
+    .section-3 h1 {
+        font-size: 18px;
+    }
+
+    .section-3 nav a {
+        font-size: 12px;
+    }
+
+    .section-3 .icon {
+        font-size: 16px;
+    }
+
+    .section-3 footer {
+        font-size: 12px;
+    }
+}
+
+/* End Section 3 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
