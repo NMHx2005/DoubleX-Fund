@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Writing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Favorit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <div class="nav">
                     <a href="./portfolio.html" class="custom-link">Portfolio</a>
                     <a href="./team.html" class="custom-link">Team</a>
-                    <a href="#" class="custom-link">Writing</a>
+                    <a href="./writing.html" class="custom-link current-page-item">Writing</a>
                 </div>
 
                 <button class="custom-button" style="visibility: hidden;">
@@ -84,92 +85,147 @@
         </div>
     </div>
 
-
-    <!-- Section 1-->
-    <section class="section1">
-        <div class="section1__content">
-            <div class="container">
-                <img alt="A glowing geometric sphere with interconnected lines" class="background-image" height="1080"
-                    src="./assets/images/Globe.webp" width="1920" />
-                <div class="container__content">
-                    <h1 class="main-text">
-                        A crypto investment firm
-                        specializing in
-                        <span class="highlight">
-                            <u>ecosystem growth</u>
-                        </span>
-                    </h1>
-                    <p class="sub-text">
-                        At DoubleX, we explore the art and science of network building because we care deeply about
-                        bringing the best possible version of a decentralized future to life.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Section 2-->
-    <section class="section2">
-        <div class="section2__content">
-            <div class="container">
-                <div class="header">
-                    <h1>
-                        Spotlight on our
-                        <u>
-                            industry
-                        </u>
-                        research
-                    </h1>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <img alt="Abstract grid pattern with data points"
-                            src="./assets/images/1730652481-42d4a0bd210671c27670a61af8665891.png" />
-                        <div class="card-content">
-                            <h2>
-                                Introducing zkSafe: A Privacy Tool for Safe Signers
-                            </h2>
-                            <p>
-                                by Valeriy Zamaraiev on 10/3/2024
-                            </p>
-                            <div class="tag">
-                                News
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img alt="Abstract globe with grid lines" src="./assets/images/1737575213-1kx_header_33.png" />
-                        <div class="card-content">
-                            <h2>
-                                Trustless Interoperability between Rollups: Landscape, Constructions, and Challenges
-                            </h2>
-                            <p>
-                                by Marshall Vyletel on 8/20/2024
-                            </p>
-                            <div class="tag">
-                                Research
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img alt="Abstract digital wave pattern" src="./assets/images/1737575212-1kx_header_4.png" />
-                        <div class="card-content">
-                            <h2>
-                                Wallet Infrastructure: Empowering the Next Generation of Dapps
-                            </h2>
-                            <p>
-                                by Nichanan Kesonpat on 12/12/2023
-                            </p>
-                            <div class="tag">
-                                Research
-                            </div>
-                        </div>
+    <main class="writing__main">
+        <div class="writing__container">
+            <h2 class="writing__title">Explore our <u>writing</u></h2>
+            <div class="writing__topic">
+                <span class="writing__topic-label">Topic</span>
+                <div class="writing__topic-list">
+                    <div class="writing__topic-items">
+                        <a class="writing__topic-item writing__topic-item--active">All</a>
+                        <a class="writing__topic-item">Research</a>
+                        <a class="writing__topic-item">News</a>
                     </div>
                 </div>
             </div>
+            <div class="writing__authors">
+                <span class="writing__authors-label">Authors</span>
+                <div class="writing__authors-list">
+                    <div class="writing__authors-items">
+                        <a class="writing__authors-item writing__authors-item--active">All</a>
+                        <a class="writing__authors-item">Rafael Morado</a>
+                        <a class="writing__authors-item">Nichanan Kesonpat</a>
+                        <a class="writing__authors-item">Valeriy Zamaraiev</a>
+                        <a class="writing__authors-item">Peter</a>
+                        <a class="writing__authors-item">Marshall Vyletel</a>
+                        <a class="writing__authors-item">Abigail Carlson</a>
+                        <a class="writing__authors-item">Robert Koschig</a>
+                        <a class="writing__authors-item">Wei Dai</a>
+                        <a class="writing__authors-item">Diana Biggs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="writing__articles">
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Republic of Bots, the game</h3>
+                        <p class="writing__article-author">by Rafael Morado on Jan 30, 2025</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Researchs</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#" class="writing__article-image">
+                    <img src="./assets/images/1737575212-1kx_header_4.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Botto: Art at the Intersection of AI and Token Networks</h3>
+                        <p class="writing__article-author">by Nichanan Kesonpat on Nov 20, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">News</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575212-1kx_header_4.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">These are not the bots you're looking for</h3>
+                        <p class="writing__article-author">by Rafael Morado on Oct 17, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575212-1kx_header_4.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Introducing zkSafe: A Privacy Tool for Safe Signers</h3>
+                        <p class="writing__article-author">by Valeriy Zamaraiev on Oct 3, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">New</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Blockchains as Worlds for Fun and Play</h3>
+                        <p class="writing__article-author">by Peter on Sep 3, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Trustless Interoperability between Rollups: Landscape,
+                            Constructions, and Challenges</h3>
+                        <p class="writing__article-author">by Marshall Vyletel on Aug 20, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Introducing Atlas: Web3 Data Provider Performance Dashboard
+                        </h3>
+                        <p class="writing__article-author">by Nichanan Kesonpat on Jul 3, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">News</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Joining 1kx as an EIR: Meet Rafael Morado</h3>
+                        <p class="writing__article-author">by Abigail Carlson on Jul 1, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">News</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">DePIN Case Studies: Evaluating the cost of running DePIN
+                            networks
+                        </h3>
+                        <p class="writing__article-author">by Robert Koschig on Jun 18, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="writing__pagination">
+                <button class="writing__pagination-button">
+                    <i class="fa-solid fa-arrow-left"></i> <span>Previous</span>
+                </button>
+                <div class="writing__pagination-numbers">
+                    <button class="writing__pagination-number writing__pagination-number--active">(01)</button>
+                    <button class="writing__pagination-number">02</button>
+                    <button class="writing__pagination-number">03</button>
+                </div>
+                <button class="writing__pagination-button">
+                    <span>Next</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
-    </section>
+    </main>
 
     <!-- Section 3-->
     <div class="section-3">
@@ -225,7 +281,10 @@
         </footer> -->
     </div>
 
-
+    <!-- Bootstrap JS and dependencies (Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
