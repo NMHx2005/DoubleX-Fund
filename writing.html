@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Writing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Favorit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="Header">
+        <div class="Header__content">
+            <div class="Header__header">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="assets/images/DoubleX_Fund-Photoroom-Photoroom.png" alt="Logo">
+                </div>
+
+                <div class="nav">
+                    <a href="./portfolio.html" class="custom-link">Portfolio</a>
+                    <a href="./team.html" class="custom-link">Team</a>
+                    <a href="./writing.html" class="custom-link current-page-item">Writing</a>
+                </div>
+
+                <button class="custom-button" style="visibility: hidden;">
+                    CHOOSE YOUR <br> ADVENTURE
+                    <figure role="img" aria-labelledby="header-glyph-caption-desktop">
+                        <svg width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M51 12.74C52.908 12.692 54.588 10.496 54.588 6.8C54.588 3.104 52.908 0.908 51 0.86V1.82C52.236 1.952 53.448 3.62 53.448 6.8C53.448 9.98 52.236 11.648 51 11.78V12.74ZM42.6574 0.835999C41.4894 0.835999 40.5054 1.028 39.7054 1.412C38.8974 1.788 38.3254 2.348 37.9894 3.092H38.8294C39.1094 2.66 39.5614 2.32 40.1854 2.072C40.8014 1.824 41.6214 1.7 42.6454 1.7C43.2134 1.7 43.7414 1.748 44.2294 1.844C44.7174 1.94 45.1454 2.092 45.5134 2.3C45.8814 2.5 46.1774 2.764 46.4014 3.092H47.2414C46.8334 2.292 46.2254 1.716 45.4174 1.364C44.6174 1.012 43.6974 0.835999 42.6574 0.835999ZM39.0094 6.92C40.2814 6.92 41.2294 5.96 41.2294 4.7C41.2294 3.44 40.2814 2.48 39.0094 2.48C37.7374 2.48 36.7894 3.44 36.7894 4.7C36.7894 5.96 37.7374 6.92 39.0094 6.92ZM39.0094 5.948C38.3494 5.948 37.8214 5.396 37.8214 4.7C37.8214 4.016 38.3494 3.476 39.0094 3.476C39.6694 3.476 40.1974 4.016 40.1974 4.7C40.1974 5.396 39.6694 5.948 39.0094 5.948ZM28.1707 13.76C28.9468 13.76 29.6428 13.676 30.2588 13.508C30.8828 13.34 31.4108 13.088 31.8428 12.752C32.2828 12.416 32.6148 12 32.8388 11.504H31.9988C31.8068 11.792 31.5428 12.04 31.2068 12.248C30.8708 12.456 30.4508 12.616 29.9468 12.728C29.4508 12.84 28.8628 12.896 28.1827 12.896C27.6147 12.896 27.0867 12.848 26.5987 12.752C26.1107 12.656 25.6827 12.504 25.3147 12.296C24.9387 12.088 24.6427 11.824 24.4267 11.504H23.5867C23.9947 12.304 24.6027 12.88 25.4107 13.232C26.2107 13.584 27.1307 13.76 28.1707 13.76ZM25.9267 11.12C26.3427 11.12 26.7347 11.06 27.1027 10.94C27.4707 10.812 27.7947 10.648 28.0747 10.448L27.6787 9.656C27.5187 9.776 27.3427 9.88 27.1507 9.968C26.9507 10.056 26.7507 10.124 26.5507 10.172C26.3507 10.22 26.1587 10.244 25.9747 10.244C25.6387 10.244 25.3627 10.188 25.1467 10.076C24.9227 9.964 24.7587 9.8 24.6547 9.584C24.5507 9.368 24.4987 9.104 24.4987 8.792C24.4987 8.512 24.5507 8.244 24.6547 7.988C24.7507 7.732 24.8947 7.5 25.0867 7.292C25.2787 7.076 25.5147 6.884 25.7947 6.716C26.0667 6.548 26.3787 6.408 26.7307 6.296V1.88H25.6747V5.744C25.2587 5.936 24.9067 6.156 24.6187 6.404C24.3307 6.644 24.0987 6.9 23.9227 7.172C23.7467 7.444 23.6187 7.72 23.5387 8C23.4587 8.28 23.4187 8.556 23.4187 8.828C23.4187 9.3 23.5147 9.708 23.7067 10.052C23.8907 10.396 24.1707 10.66 24.5467 10.844C24.9147 11.028 25.3747 11.12 25.9267 11.12ZM15.9621 0.835999C14.7941 0.835999 13.8101 1.028 13.0101 1.412C12.2021 1.788 11.6301 2.348 11.2941 3.092H12.1341C12.4141 2.66 12.8661 2.32 13.4901 2.072C14.1061 1.824 14.9261 1.7 15.9501 1.7C16.5181 1.7 17.0461 1.748 17.5341 1.844C18.0221 1.94 18.4501 2.092 18.8181 2.3C19.1861 2.5 19.4821 2.764 19.7061 3.092H20.5461C20.1381 2.292 19.5301 1.716 18.7221 1.364C17.9221 1.012 17.0021 0.835999 15.9621 0.835999ZM12.3141 6.92C13.5861 6.92 14.5341 5.96 14.5341 4.7C14.5341 3.44 13.5861 2.48 12.3141 2.48C11.0421 2.48 10.0941 3.44 10.0941 4.7C10.0941 5.96 11.0421 6.92 12.3141 6.92ZM12.3141 5.948C11.6541 5.948 11.1261 5.396 11.1261 4.7C11.1261 4.016 11.6541 3.476 12.3141 3.476C12.9741 3.476 13.5021 4.016 13.5021 4.7C13.5021 5.396 12.9741 5.948 12.3141 5.948ZM7.51875 0.86C5.61075 0.908 3.93075 3.104 3.93075 6.8C3.93075 10.496 5.61075 12.692 7.51875 12.74V11.78C6.28275 11.648 5.07075 9.98 5.07075 6.8C5.07075 3.62 6.28275 1.952 7.51875 1.82V0.86Z"
+                                fill="black"></path>
+                        </svg>
+                    </figure>
+                </button>
+
+                <div class="menu-btn">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+                <div class="menu-btn-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="nav">
+                    <a href="#" class="custom-link">Portfolio <svg width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.6386 7.19887L20.8081 11.5199C21.064 11.785 21.064 12.215 20.8081 12.4801L16.6386 16.8011C16.3828 17.0663 15.9679 17.0663 15.7121 16.8011C15.4562 16.536 15.4562 16.1061 15.7121 15.8409L18.7631 12.679L2 12.679L2 11.321L18.7631 11.321L15.7121 8.15909C15.4562 7.89394 15.4562 7.46403 15.7121 7.19887C15.9679 6.93371 16.3828 6.93371 16.6386 7.19887Z"
+                                fill="black"></path>
+                        </svg></a>
+                    <a href="#" class="custom-link">Team <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.6386 7.19887L20.8081 11.5199C21.064 11.785 21.064 12.215 20.8081 12.4801L16.6386 16.8011C16.3828 17.0663 15.9679 17.0663 15.7121 16.8011C15.4562 16.536 15.4562 16.1061 15.7121 15.8409L18.7631 12.679L2 12.679L2 11.321L18.7631 11.321L15.7121 8.15909C15.4562 7.89394 15.4562 7.46403 15.7121 7.19887C15.9679 6.93371 16.3828 6.93371 16.6386 7.19887Z"
+                                fill="black"></path>
+                        </svg></a>
+                    <a href="#" class="custom-link">Writing <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.6386 7.19887L20.8081 11.5199C21.064 11.785 21.064 12.215 20.8081 12.4801L16.6386 16.8011C16.3828 17.0663 15.9679 17.0663 15.7121 16.8011C15.4562 16.536 15.4562 16.1061 15.7121 15.8409L18.7631 12.679L2 12.679L2 11.321L18.7631 11.321L15.7121 8.15909C15.4562 7.89394 15.4562 7.46403 15.7121 7.19887C15.9679 6.93371 16.3828 6.93371 16.6386 7.19887Z"
+                                fill="black"></path>
+                        </svg></a>
+                </div>
+                <button class="custom-button">
+                    <figure role="img" aria-labelledby="header-glyph-caption-desktop">
+                        <svg width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M51 12.74C52.908 12.692 54.588 10.496 54.588 6.8C54.588 3.104 52.908 0.908 51 0.86V1.82C52.236 1.952 53.448 3.62 53.448 6.8C53.448 9.98 52.236 11.648 51 11.78V12.74ZM42.6574 0.835999C41.4894 0.835999 40.5054 1.028 39.7054 1.412C38.8974 1.788 38.3254 2.348 37.9894 3.092H38.8294C39.1094 2.66 39.5614 2.32 40.1854 2.072C40.8014 1.824 41.6214 1.7 42.6454 1.7C43.2134 1.7 43.7414 1.748 44.2294 1.844C44.7174 1.94 45.1454 2.092 45.5134 2.3C45.8814 2.5 46.1774 2.764 46.4014 3.092H47.2414C46.8334 2.292 46.2254 1.716 45.4174 1.364C44.6174 1.012 43.6974 0.835999 42.6574 0.835999ZM39.0094 6.92C40.2814 6.92 41.2294 5.96 41.2294 4.7C41.2294 3.44 40.2814 2.48 39.0094 2.48C37.7374 2.48 36.7894 3.44 36.7894 4.7C36.7894 5.96 37.7374 6.92 39.0094 6.92ZM39.0094 5.948C38.3494 5.948 37.8214 5.396 37.8214 4.7C37.8214 4.016 38.3494 3.476 39.0094 3.476C39.6694 3.476 40.1974 4.016 40.1974 4.7C40.1974 5.396 39.6694 5.948 39.0094 5.948ZM28.1707 13.76C28.9468 13.76 29.6428 13.676 30.2588 13.508C30.8828 13.34 31.4108 13.088 31.8428 12.752C32.2828 12.416 32.6148 12 32.8388 11.504H31.9988C31.8068 11.792 31.5428 12.04 31.2068 12.248C30.8708 12.456 30.4508 12.616 29.9468 12.728C29.4508 12.84 28.8628 12.896 28.1827 12.896C27.6147 12.896 27.0867 12.848 26.5987 12.752C26.1107 12.656 25.6827 12.504 25.3147 12.296C24.9387 12.088 24.6427 11.824 24.4267 11.504H23.5867C23.9947 12.304 24.6027 12.88 25.4107 13.232C26.2107 13.584 27.1307 13.76 28.1707 13.76ZM25.9267 11.12C26.3427 11.12 26.7347 11.06 27.1027 10.94C27.4707 10.812 27.7947 10.648 28.0747 10.448L27.6787 9.656C27.5187 9.776 27.3427 9.88 27.1507 9.968C26.9507 10.056 26.7507 10.124 26.5507 10.172C26.3507 10.22 26.1587 10.244 25.9747 10.244C25.6387 10.244 25.3627 10.188 25.1467 10.076C24.9227 9.964 24.7587 9.8 24.6547 9.584C24.5507 9.368 24.4987 9.104 24.4987 8.792C24.4987 8.512 24.5507 8.244 24.6547 7.988C24.7507 7.732 24.8947 7.5 25.0867 7.292C25.2787 7.076 25.5147 6.884 25.7947 6.716C26.0667 6.548 26.3787 6.408 26.7307 6.296V1.88H25.6747V5.744C25.2587 5.936 24.9067 6.156 24.6187 6.404C24.3307 6.644 24.0987 6.9 23.9227 7.172C23.7467 7.444 23.6187 7.72 23.5387 8C23.4587 8.28 23.4187 8.556 23.4187 8.828C23.4187 9.3 23.5147 9.708 23.7067 10.052C23.8907 10.396 24.1707 10.66 24.5467 10.844C24.9147 11.028 25.3747 11.12 25.9267 11.12ZM15.9621 0.835999C14.7941 0.835999 13.8101 1.028 13.0101 1.412C12.2021 1.788 11.6301 2.348 11.2941 3.092H12.1341C12.4141 2.66 12.8661 2.32 13.4901 2.072C14.1061 1.824 14.9261 1.7 15.9501 1.7C16.5181 1.7 17.0461 1.748 17.5341 1.844C18.0221 1.94 18.4501 2.092 18.8181 2.3C19.1861 2.5 19.4821 2.764 19.7061 3.092H20.5461C20.1381 2.292 19.5301 1.716 18.7221 1.364C17.9221 1.012 17.0021 0.835999 15.9621 0.835999ZM12.3141 6.92C13.5861 6.92 14.5341 5.96 14.5341 4.7C14.5341 3.44 13.5861 2.48 12.3141 2.48C11.0421 2.48 10.0941 3.44 10.0941 4.7C10.0941 5.96 11.0421 6.92 12.3141 6.92ZM12.3141 5.948C11.6541 5.948 11.1261 5.396 11.1261 4.7C11.1261 4.016 11.6541 3.476 12.3141 3.476C12.9741 3.476 13.5021 4.016 13.5021 4.7C13.5021 5.396 12.9741 5.948 12.3141 5.948ZM7.51875 0.86C5.61075 0.908 3.93075 3.104 3.93075 6.8C3.93075 10.496 5.61075 12.692 7.51875 12.74V11.78C6.28275 11.648 5.07075 9.98 5.07075 6.8C5.07075 3.62 6.28275 1.952 7.51875 1.82V0.86Z"
+                                fill="black"></path>
+                        </svg>
+                    </figure>
+                    CHOOSE YOUR ADVENTURE
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="writing__main">
+        <div class="writing__container">
+            <h2 class="writing__title">Explore our <u>writing</u></h2>
+            <div class="writing__topic">
+                <span class="writing__topic-label">Topic</span>
+                <div class="writing__topic-list">
+                    <div class="writing__topic-items">
+                        <a class="writing__topic-item writing__topic-item--active">All</a>
+                        <a class="writing__topic-item">Research</a>
+                        <a class="writing__topic-item">News</a>
+                    </div>
+                </div>
+            </div>
+            <div class="writing__authors">
+                <span class="writing__authors-label">Authors</span>
+                <div class="writing__authors-list">
+                    <div class="writing__authors-items">
+                        <a class="writing__authors-item writing__authors-item--active">All</a>
+                        <a class="writing__authors-item">Rafael Morado</a>
+                        <a class="writing__authors-item">Nichanan Kesonpat</a>
+                        <a class="writing__authors-item">Valeriy Zamaraiev</a>
+                        <a class="writing__authors-item">Peter</a>
+                        <a class="writing__authors-item">Marshall Vyletel</a>
+                        <a class="writing__authors-item">Abigail Carlson</a>
+                        <a class="writing__authors-item">Robert Koschig</a>
+                        <a class="writing__authors-item">Wei Dai</a>
+                        <a class="writing__authors-item">Diana Biggs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="writing__articles">
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Republic of Bots, the game</h3>
+                        <p class="writing__article-author">by Rafael Morado on Jan 30, 2025</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Researchs</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#" class="writing__article-image">
+                    <img src="./assets/images/1737575212-1kx_header_4.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Botto: Art at the Intersection of AI and Token Networks</h3>
+                        <p class="writing__article-author">by Nichanan Kesonpat on Nov 20, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">News</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575212-1kx_header_4.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">These are not the bots you're looking for</h3>
+                        <p class="writing__article-author">by Rafael Morado on Oct 17, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575212-1kx_header_4.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Introducing zkSafe: A Privacy Tool for Safe Signers</h3>
+                        <p class="writing__article-author">by Valeriy Zamaraiev on Oct 3, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">New</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Blockchains as Worlds for Fun and Play</h3>
+                        <p class="writing__article-author">by Peter on Sep 3, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Trustless Interoperability between Rollups: Landscape,
+                            Constructions, and Challenges</h3>
+                        <p class="writing__article-author">by Marshall Vyletel on Aug 20, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Introducing Atlas: Web3 Data Provider Performance Dashboard
+                        </h3>
+                        <p class="writing__article-author">by Nichanan Kesonpat on Jul 3, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">News</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">Joining 1kx as an EIR: Meet Rafael Morado</h3>
+                        <p class="writing__article-author">by Abigail Carlson on Jul 1, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">News</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="writing__article" href="#">
+                    <img src="./assets/images/1737575210-1kx_header_6.png" class="writing__article-image">
+                    <div class="writing__article-content">
+                        <h3 class="writing__article-title">DePIN Case Studies: Evaluating the cost of running DePIN
+                            networks
+                        </h3>
+                        <p class="writing__article-author">by Robert Koschig on Jun 18, 2024</p>
+                        <div class="writing__article-tag">
+                            <div class="writing__tag">Research</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="writing__pagination">
+                <button class="writing__pagination-button">
+                    <i class="fa-solid fa-arrow-left"></i> <span>Previous</span>
+                </button>
+                <div class="writing__pagination-numbers">
+                    <button class="writing__pagination-number writing__pagination-number--active">(01)</button>
+                    <button class="writing__pagination-number">02</button>
+                    <button class="writing__pagination-number">03</button>
+                </div>
+                <button class="writing__pagination-button">
+                    <span>Next</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section 3-->
+    <div class="section-3">
+        <header>
+            <div class="marquee-content">
+                <div class="marquee">
+                    <span>( •_•)&gt;⌐■-■</span>
+                    <span>(⌐■_■)</span>
+                    <span>Architecting network success</span>
+                    <span>(•_•)</span>
+                </div>
+                <div class="marquee">
+                    <span>( •_•)&gt;⌐■-■</span>
+                    <span>(⌐■_■)</span>
+                    <span>Architecting network success</span>
+                    <span>(•_•)</span>
+                </div>
+                <div class="marquee">
+                    <span>( •_•)&gt;⌐■-■</span>
+                    <span>(⌐■_■)</span>
+                    <span>Architecting network success</span>
+                    <span>(•_•)</span>
+                </div>
+                <div class="marquee">
+                    <span>( •_•)&gt;⌐■-■</span>
+                    <span>(⌐■_■)</span>
+                    <span>Architecting network success</span>
+                    <span>(•_•)</span>
+                </div>
+                <div class="marquee">
+                    <span>( •_•)&gt;⌐■-■</span>
+                    <span>(⌐■_■)</span>
+                    <span>Architecting network success</span>
+                    <span>(•_•)</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h1>DoubleX</h1>
+            <!-- <nav>
+                <a href="#">Made In House</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </nav> -->
+            <div class="social-icons">
+                <span class="icon">𝕏</span>
+                <span class="icon"><strong>in</strong></span>
+            </div>
+        </main>
+        <!-- <footer>
+            <a href="#" class="disclosure">Important Disclosures</a>
+        </footer> -->
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
